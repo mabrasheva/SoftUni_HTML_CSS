@@ -1,0 +1,31 @@
+h1 {
+    color: brown;
+}
+
+p {
+    font-size: 14px;
+}
+
+div {
+    background-color: aqua;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    color: darkmagenta;
+}
+
+.highlight {
+    background-color: goldenrod
+}
+
+#main-title {
+    color: blue;
+}
+
+#special-paragraph {
+    font-style: italic;
+}
