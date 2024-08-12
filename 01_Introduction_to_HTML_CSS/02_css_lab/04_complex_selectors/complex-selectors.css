@@ -1,0 +1,44 @@
+/* Descendant Selector */
+
+nav a {
+    text-decoration: none;
+}
+
+/* Child Combinator */
+div.services-information>section.services article.service-description {
+    background-color: lightblue;
+}
+
+/* Pseudo-class Selector:
+Use complex selectors that include pseudo-classes, like :first-child, :last-child, or :nth-of-type(), to apply styles to specific children of an element based on their order or type. */
+
+header>nav>ul>li:first-child {
+    font-weight: bold;
+}
+
+header>nav>ul>li:nth-of-type(2) {
+    font-style: normal;
+}
+
+header>nav>ul>li:last-child {
+    font-style: italic;
+}
+
+/* Pseudo-element Selector:
+Implement complex selectors with pseudo-elements, such as ::before or ::after, to add decorative elements before or after elements within a specific class or ID. */
+
+div>section.services h2::before {
+    content: ">> ";
+    color: darkred;
+}
+
+div>section.services h2::after {
+    content: " <<";
+    color: darkred;
+}
+
+img[src="img1.jpg"] {
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+}

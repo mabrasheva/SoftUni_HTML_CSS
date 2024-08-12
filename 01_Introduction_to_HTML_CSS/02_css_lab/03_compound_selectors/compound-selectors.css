@@ -1,0 +1,37 @@
+/* Class and Element Combination*/
+
+p.highlighted {
+    color: blue;
+    font-size: 20px;
+}
+
+/* ID and Element Combination */
+
+div#special {
+    background-color: orange;
+    padding: 25px 5px 5px 5px 5px;
+}
+
+/* Attribute and Class Combination */
+
+.fancy[href*="softuni"] {
+    color: orange;
+    border-bottom: solid orange;
+}
+
+li.important {
+    color: aqua;
+}
+
+/* Multiple Class Combination */
+
+.regular-paragraph.normal-paragraph {
+    color: blue;
+}
+
+/* Multiple Class Combination */
+.important.very-important {
+    font-style: italic;
+    font-weight: 1000;
+    color: red;
+}

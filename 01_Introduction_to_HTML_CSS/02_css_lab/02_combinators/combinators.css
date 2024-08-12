@@ -1,0 +1,26 @@
+/* Descendant Combinator */
+
+div p {
+    color: blue;
+}
+
+/* Child Combinator */
+
+ul>li {
+    list-style-type: circle;
+}
+
+/* Adjacent Sibling Combinator */
+
+p+p {
+    background-color: grey;
+}
+
+/* General Sibling Combinator */
+p~span {
+    font-weight: 1000;
+}
+
+span {
+    color: red;
+}
