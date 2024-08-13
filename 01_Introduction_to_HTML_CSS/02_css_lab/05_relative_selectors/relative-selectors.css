@@ -1,0 +1,41 @@
+/* Descendant Selector */
+
+section p {
+    color: darkslategrey;
+}
+
+/* Adjacent Sibling Selector */
+
+article.highlighted+article {
+    background-color: coral;
+}
+
+/* General Sibling Selector */
+
+h2.special~p {
+    color: blue;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Child Selector */
+
+li>a {
+    text-decoration: none;
+}
+
+/* Child Selector */
+
+ul.main-list>li {
+    font-weight: bold;
+}
+
+li.special-item+li {
+    color: coral;
+}
+
+li>a.styled {
+    color: green;
+}
