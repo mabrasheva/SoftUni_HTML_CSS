@@ -1,0 +1,11 @@
+time {
+    font-style: oblique;
+}
+
+span.author {
+    font-weight: bold;
+}
+
+article header h2+p {
+    color: grey;
+}
