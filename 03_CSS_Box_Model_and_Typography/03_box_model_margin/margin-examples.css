@@ -1,0 +1,19 @@
+div {
+    border: 2px solid black;
+}
+
+div.uniform-margin {
+    margin: 40px;
+}
+
+/* top, right, bottom, left */
+
+div.non-uniform-margin {
+    margin: 10px 30px 20px 40px;
+}
+
+/* In this case the only effect is that the element will be moved up 20px as it is impossible to move it negatively 20px in all directions. */
+
+div.negative-margin {
+    margin: -20px;
+}
