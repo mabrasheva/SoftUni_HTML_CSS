@@ -1,0 +1,29 @@
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body {
+    margin: 2em;
+}
+
+ul {
+    display: block;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+a {
+    display: block;
+    width: 3em;
+    font-size: 1.5em;
+    color: black;
+    aspect-ratio: 1/1;
+    background: #eee;
+    align-content: center;
+    text-align: center;
+    border-radius: 50%;
+}

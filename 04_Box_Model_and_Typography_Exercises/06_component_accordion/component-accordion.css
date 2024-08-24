@@ -1,0 +1,26 @@
+body {
+    margin: 2em;
+}
+
+.accordion {
+    border: 1px solid lightgray;
+    padding: 1em;
+}
+
+details summary {
+    display: block;
+    font-weight: bold;
+}
+
+details summary:before {
+    content: '>';
+    margin-right: 0.5em;
+}
+
+details[open] summary::before {
+    content: 'v';
+}
+
+p {
+    padding: 0.5em 0;
+}

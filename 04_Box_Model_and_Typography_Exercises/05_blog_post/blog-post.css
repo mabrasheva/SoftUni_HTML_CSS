@@ -1,0 +1,35 @@
+/* 
+•	Override font family styling from typography css with Lato, sans-serif
+•	Create a container element to center the layout and set max-width */
+
+html {
+    font-family: Lato, sans-serif;
+}
+
+body {
+    padding: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.post {
+    padding: 1.5em;
+    border: 1px solid lightgrey;
+    border-radius: 0.3em;
+}
+
+.post header h1 {
+    margin-top: 0;
+}
+
+footer {
+    font-style: italic;
+}
+
+footer time,
+footer .author {
+    font-weight: bold;
+}

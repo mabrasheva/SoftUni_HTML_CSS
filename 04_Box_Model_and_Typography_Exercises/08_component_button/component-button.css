@@ -1,0 +1,49 @@
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body,
+button,
+textarea,
+input {
+    font: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 1em 1.5em;
+    margin-right: 0.5em;
+    color: black;
+    background: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 0.3em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:focus,
+.button:hover {
+    color: white;
+    background: black;
+}
+
+.button:active {
+    background: green;
+}
+
+.button.primary {
+    background: orange;
+}
+
+.button.secondary {
+    background: lightgoldenrodyellow;
+}
+
+.button.outline {
+    background: white;
+}
