@@ -1,0 +1,21 @@
+body {
+    border: 2px solid green;
+    padding: 2em;
+    font-weight: bold;
+    font: 16px Lato, Verdana, sans-serif;
+}
+
+header,
+main,
+footer {
+    border: 2px solid black;
+    text-align: center;
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header,
+main {
+    margin-bottom: 2em;
+}

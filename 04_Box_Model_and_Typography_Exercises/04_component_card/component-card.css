@@ -1,0 +1,44 @@
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background: #eee;
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+.card {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5em 0 rgb(128, 128, 128, 1);
+}
+
+.card span {
+    display: block;
+}
+
+.card .title {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.card .content,
+.card .footer {
+    padding: 1.5em;
+}
+
+.card .footer span {
+    overflow: hidden;
+    font-style: italic;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
