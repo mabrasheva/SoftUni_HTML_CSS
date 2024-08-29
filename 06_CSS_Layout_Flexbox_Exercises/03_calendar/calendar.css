@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px/1.5 Lato, sans-serif;
+    background: #eee;
+    padding: 2em;
+    margin: 0;
+}
+
+.calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    background: white;
+    border: 2px solid #eee;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.calendar div {
+    border: 1px solid #eee;
+}
+
+.calendar>.week,
+.calendar>aside {
+    flex-grow: 1;
+}
+
+.calendar>.week {
+    flex-grow: 8;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar>aside {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar>aside>div,
+.calendar>.week>div {
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.calendar>.week>.workweek,
+.calendar>.week>.weekend {
+    flex-basis: 100%;
+}
