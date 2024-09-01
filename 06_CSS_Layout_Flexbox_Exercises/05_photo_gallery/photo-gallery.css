@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font: 14px/1.5 Lato, sans-serif;
+    background: #eee;
+    padding: 2em;
+}
+
+img {
+    width: 200px;
+    box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
+    border-radius: 0.3em;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    list-style: none;
+    background: white;
+    padding: 0.5em;
+    gap: 1em;
+}
+
+ul li img {
+    margin: auto;
+}
+
+
+span.image-title {
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 10px;
+}
