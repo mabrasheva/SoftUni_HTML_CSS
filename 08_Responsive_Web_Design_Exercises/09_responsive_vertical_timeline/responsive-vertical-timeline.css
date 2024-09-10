@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px/1.5 Lato, sans-serif;
+    background: #eee;
+    padding: 2em;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid #ccc;
+    border-radius: 0.2em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container h1 {
+    text-align: center;
+    background: #fff;
+    border-radius: 0.2em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    z-index: 5;
+}
+
+article {
+    background: #fff;
+    border-radius: 0.2em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    padding: 1em;
+    width: calc(50% - 2em);
+}
+
+article:nth-child(odd) {
+    text-align: right;
+}
+
+article:nth-child(even) {
+    margin-left: auto;
+}
+
+.container::after {
+    display: block;
+    content: "";
+    background: #ccc;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 2em;
+    z-index: 1;
+}
+
+article::before {
+    display: block;
+    content: "";
+    height: 2em;
+    aspect-ratio: 1/1;
+    background: green;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    border: 2px solid #fff;
+    box-shadow: 0 0 2em 0 rgb(255, 255, 255, 0.4);
+    left: calc(50% - 1em);
+    /* The circle has a diameter of 2em */
+}
+
+article:nth-child(even)::before {
+    background: orange;
+}
+
+@media (max-width:800px) {
+    .container::after {
+        left: 10%;
+    }
+
+    article::before {
+        left: calc(10% - 1em);
+        /* The circle has a diameter of 2em */
+    }
+
+    article {
+        width: calc(90% - 2em);
+    }
+
+    article:nth-child(odd) {
+        text-align: left;
+        margin-left: auto;
+    }
+}
