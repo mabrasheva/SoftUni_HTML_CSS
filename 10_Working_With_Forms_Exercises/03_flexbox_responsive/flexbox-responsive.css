@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body,
+input,
+textarea,
+select,
+option {
+    font: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eee;
+    padding: 2em;
+}
+
+form {
+    flex: 1 1 100%;
+    display: flex;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 1em;
+    gap: 1em;
+    flex-wrap: wrap;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+form input {
+    border: none;
+    padding: 0.8em;
+    border-radius: 0.3em;
+    background-color: #eee;
+}
+
+form input[type="submit"] {
+    background-color: darkorange;
+    color: #fff;
+}
+
+/* form input#name {
+    flex: 1 1 10ch;
+}
+
+form input#email {
+    flex: 1 1 30ch;
+}
+
+form input#subscribe {
+    flex: 1 1 auto;
+} */
+
+form input#name {
+    flex-grow: 1;
+}
+
+form input#email {
+    flex-grow: 3;
+}
+
+form input#subscribe {
+    flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+    form input[type="submit"] {
+        width: 100%;
+    }
+}

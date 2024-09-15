@@ -1,0 +1,125 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body,
+input,
+textarea,
+select,
+option {
+    font: inherit;
+}
+
+body {
+    padding: 2em;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form {
+    flex: 1 0 auto;
+    max-width: 600px;
+    background: #fff;
+    padding: 2em;
+    border: 2px solid #eee;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+form p label {
+    order: -1;
+}
+
+form p .helper {
+    font-style: italic;
+    opacity: 0.6;
+}
+
+fieldset {
+    border: none;
+    padding: 2em;
+}
+
+fieldset legend {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8em;
+    border: 2px solid #ccc;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+input:focus {
+    border-color: darkorange;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:user-invalid~label {
+    color: red;
+}
+
+input[type="submit"] {
+    background-color: darkorange;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+    background-color: rgb(173, 98, 7);
+}
+
+input:required~label::after {
+    display: inline-block;
+    content: '*';
+    padding-left: 0.3em;
+    color: red;
+}
+
+form p label::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Font Awesome 6 Free";
+}
+
+input[type="email"]~label::before {
+    content: '\f0e0';
+}
+
+input[type="password"]~label::before {
+    content: '\f084';
+}

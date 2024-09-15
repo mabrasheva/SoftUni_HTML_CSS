@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body,
+input,
+textarea,
+select,
+option {
+    font: inherit;
+}
+
+body {
+    background: #eee;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form.login {
+    flex: 1 0 auto;
+    max-width: 700px;
+    background: #fff;
+    padding: 2em;
+    border: 2px solid #eee;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    padding: 1em;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+form.login p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+form.login p label {
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: -1em;
+    left: 0;
+    transition:
+        translate 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+    opacity: 0.6;
+}
+
+form.login p:has(input:focus) label {
+    opacity: 1;
+}
+
+/* input:placeholder-shown: This pseudo-class targets the input element when the placeholder is currently visible (i.e., the user hasn't typed anything into the field yet). When the user starts typing, the placeholder is hidden, and the :placeholder-shown condition no longer applies. */
+
+form.login p:has(input:placeholder-shown) label {
+    translate: 0 1.8em;
+}
+
+form p .helper {
+    font-style: italic;
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+
+    &::placeholder {
+        color: transparent;
+    }
+
+    &:focus {
+        border-color: gray;
+    }
+}
+
+/* input::placeholder {
+    color: transparent;
+} */
+
+/* input:focus {
+    border-color: gray;
+} */
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:user-invalid~label {
+    color: red;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    border: none;
+    border-radius: 0.3em;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+    background-color: gray;
+    color: #fff;
+}
+
+input:required~label::after {
+    display: inline-block;
+    content: '*';
+    padding-left: 0.3em;
+    color: red;
+}
