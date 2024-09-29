@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Margarine, cursive;
+}
+
+body,
+input,
+textarea,
+select,
+option {
+    font: inherit;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+body {
+    background: hsl(27 87% 92% / 1);
+    padding: 1em;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 10em auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.container>section {
+    border: 1px solid gray;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.4);
+    padding: 1em;
+}
+
+.main-info-item {
+    margin: 1em auto;
+}
+
+.main-info h2 {
+    padding-bottom: 0.5em;
+}
+
+.personal-info {
+    flex: 1 1 33%;
+}
+
+.personal-info p{
+    margin: 1.3em auto;
+}
+
+.main-info i {
+    color: hsl(205.09deg 76.04% 57.45%);
+    margin-right: 1em;
+}
+
+.container p.skill-percent {
+    color: #fff;
+    background-color: hsl(205.09deg 76.04% 57.45%);
+    text-align: center;
+    border-radius: 1em;
+    margin-left: 0;
+}
+
+.skill-percent.percent-90 {
+    width: 90%;
+}
+
+.skill-percent.percent-80 {
+    width: 80%;
+}
+
+.skill-percent.percent-75 {
+    width: 75%;
+}
+
+.skill-percent.percent-50 {
+    width: 50%;
+}
+
+.work-experience h3 {
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.work-experience {
+    flex: 2 1 66%;
+}
+
+.work-experience h4 {
+    opacity: 0.7;
+    margin-top: 1.5em;
+}
+
+.work-experience p {
+    margin: 1em auto;
+}
+
+.work-experience p.period {
+    color: hsl(205.09deg 76.04% 57.45%);
+}
+
+.main-info::after,
+.experience-details:not(:last-child)::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: hsl(0deg 0% 77.25%);
+}
