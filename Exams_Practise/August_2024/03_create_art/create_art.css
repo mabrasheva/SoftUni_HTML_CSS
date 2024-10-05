@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Use font 'Playwrite PE' for the text and font 'Roboto' for the buttons */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font: 14px/1.5 'Playwrite PE', cursive;
+    background: #fff;
+    padding: 1em 0;
+    margin: 0 auto;
+    color: rgb(49 69 132);
+}
+
+input,
+textarea,
+select,
+option {
+    font: inherit;
+}
+
+button,
+a {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin: 1em auto 5em auto;
+}
+
+.main-nav ul,
+footer ul {
+    display: flex;
+    gap: 2em;
+    font-weight: bold;
+}
+
+#home-link {
+    color: red;
+}
+
+.button-contact {
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 2px solid red;
+    border-radius: 0.5em;
+}
+
+.details {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.button-about {
+    background-color: red;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border-radius: 3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+.button-get-in-touch {
+    padding: 0.8em 1.5em;
+    border-radius: 3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    width: 100%;
+}
+
+main section p {
+    padding: 2em 0;
+}
+
+.about-content {
+    padding-left: 4em;
+}
+
+.about {
+    display: flex;
+}
+
+.about .media {
+    flex: 0 0 60%;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.products,
+.company-details {
+    align-items: center;
+}
+
+.products {
+    border: 2px solid #ccc;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.products p,
+.company-details p {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.products img.products-img {
+    display: block;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.products:nth-child(even) img.bubble{
+    display: block;
+    max-width: 20%;
+    position: absolute;
+    bottom:-10em;
+    left: -5em;
+    z-index: 1;
+}
+
+.products:nth-child(odd) img.bubble{
+    display: block;
+    max-width: 20%;
+    position: absolute;
+    bottom:-10em;
+    right: -5em;
+    z-index: 1;
+}
+
+.company-details img {
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+main h2 {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+main h5 {
+    color: red;
+    font-size: 1rem;
+    padding: 1em;
+    text-align: center;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.contacts form {
+    padding: 0 4em;
+}
+
+.contacts form label {
+    display: none;
+}
+
+.contacts form input,
+.contacts form textarea {
+    width: 100%;
+    background-color: rgb(49 69 132);
+    color: #fff;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.contacts form input {
+    margin: 0.5em 0;
+}
+
+.contacts form textarea {
+    margin: 1em 0 1.5em 0;
+    height: 6em;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    background-color: rgb(49 69 132);
+    color: #fff;
+    padding: 3em;
+}
