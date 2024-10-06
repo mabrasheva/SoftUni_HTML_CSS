@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font: 14px/1.5 'Gochi Hand', cursive;
+    background: hsl(0deg 0% 87.84%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5em;
+}
+
+p {
+    opacity: 0.7;
+}
+
+.card {
+    max-width: 1000px;
+    margin: 2em auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.card-main-content {
+    padding: 2em;
+    background: hsl(0deg 0% 99.61%);
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url('./images/nature.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding: 2em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    overflow: hidden;
+}
+
+.card-content {
+    background: hsl(120deg 4.76% 95.88%);
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    background: hsl(0deg 0% 97.65%);
+    padding: 2em 4em;
+}
+
+footer p {
+    padding: 0.5em;
+}
